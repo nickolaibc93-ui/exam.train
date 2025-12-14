@@ -5,4 +5,5 @@ FROM rocker/rstudio
 RUN apt-get update && apt-get install -y curl
 
 # Install R packages using R's built-in 'install.packages' function.
-RUN R -e 'install.packages(c("RPostgres"))'
+
+RUN R -e 'install.packages(c("microbenchmark"))'
